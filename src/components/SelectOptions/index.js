@@ -9,6 +9,7 @@ const SelectOptions = ({label, options, isRequired, value, ChangeInputValue}) =>
         <div className="select-options">
             <label>{label}</label>
             <select required={isRequired} value={value}  onChange={handleSelectedOptions}>
+                <option value=""></option>
                 {options.map((option) => {
                     return <option key={option} value={option}>
                         {option}

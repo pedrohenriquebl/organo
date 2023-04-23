@@ -1,9 +1,9 @@
 import './Person.css'
 
-const Person = ({ name, position, image }) => {
+const Person = ({ name, position, image, backGroundColor }) => {
     return (
         <div className="person">
-            <div className="header">
+            <div className="header" style={{backgroundColor: backGroundColor}}>
                 <img src={image} alt={name} />
             </div>
             <div className="footer">

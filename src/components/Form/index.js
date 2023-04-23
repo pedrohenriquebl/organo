@@ -9,7 +9,7 @@ const Form = ({ onFormSubmitted, teamList }) => {
     const [name, setName] = useState('')
     const [position, setPosition] = useState('')
     const [image, setImage] = useState('')
-    const [displayArea, setDisplayArea] = useState('Front-end')
+    const [displayArea, setDisplayArea] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -23,7 +23,7 @@ const Form = ({ onFormSubmitted, teamList }) => {
         setName('')
         setImage('')
         setPosition('')
-        setPosition('Front-end')
+        setDisplayArea('')
     }
 
     return (

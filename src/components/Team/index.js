@@ -9,6 +9,7 @@ const Team = ({ name, backgroundColor, textColor, persons }) => {
                 {persons.map((person) => {
                     return (
                         <Person key={person.name}
+                            backGroundColor={textColor}
                             name={person.name}
                             image={person.image}
                             position={person.position}
