@@ -1,0 +1,14 @@
+footer {
+    background-color: #6278F7;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 64px;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 30px;
+}
