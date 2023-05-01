@@ -215,20 +215,24 @@ function App() {
         },
     ]
 
-    const[registered, setRegistered] = useState(firstLoadData)
+    const[registered, setRegistered] = useState(firstLoadData);
 
     function deleteCard (id) {
-        setRegistered(registered.filter(registered => registered.id !== id))
+        setRegistered(registered.filter(registered => registered.id !== id));
     }
 
     function changeTeamColor(color, id) {
         setTeams(teams.map( team =>{
-            if (team.id === id) {
-                team.color = color
+            if (team.id !== id) {
+                team.color = color;
             }
 
             return team;
-        }))
+        }));
+    }
+
+    function registerTeam(newTeam){
+        setTeams([...teams, {...newTeam, id: uuid()}]);
     }
 
     return (
@@ -237,6 +241,7 @@ function App() {
             <Form
                 teamList={teams.map( team => team.name)}
                 onFormSubmitted={ newRegister => setRegistered([...registered, newRegister]) }
+                registerTeam={registerTeam}
             />
             {teams.map((team) => {
                 return (
