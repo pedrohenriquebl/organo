@@ -38,9 +38,14 @@
     padding: 0 16px;
 }
 
-.deletar {
+.delete {
     cursor: pointer;
     position: absolute;
     right: -10px;
     top: -10px;
+}
+
+.favorite {
+    margin-top: 20px;
+    cursor: pointer;
 }

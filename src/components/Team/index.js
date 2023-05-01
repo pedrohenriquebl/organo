@@ -2,7 +2,7 @@ import './Team.css'
 import Person from "../Person";
 import  hexToRgba  from "hex-to-rgba";
 
-const Team = ({ name, primaryColor, persons, onCardDelete, changeColor }) => {
+const Team = ({ name, primaryColor, persons, onCardDelete, changeColor, onFavorite }) => {
     return (
         (persons.length > 0) && <section className="team" style={{ backgroundColor: hexToRgba(primaryColor, 0.6), backgroundImage: 'url(/imagens/fundo.png)' }}>
 
@@ -24,6 +24,8 @@ const Team = ({ name, primaryColor, persons, onCardDelete, changeColor }) => {
                             position={person.position}
                             onCardDelete={onCardDelete}
                             cardId={person.id}
+                            favorite={person.favorite}
+                            isFavorite={onFavorite}
                         />
                     )
                 })}

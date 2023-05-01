@@ -50,168 +50,192 @@ function App() {
             name: 'JULIANA AMOASEI',
             position: 'Desenvolvedora de software e instrutora',
             image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
-            displayArea: [0].name
+            displayArea: [0].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'DANIEL ARTINE',
             position: 'Engenheiro de Software na Stone Age',
             image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
-            displayArea: teams[0].name
+            displayArea: teams[0].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'GUILHERME LIMA',
             position: 'Desenvolvedor Python e JavaScript na Alura',
             image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-            displayArea: teams[0].name
+            displayArea: teams[0].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'PAULO SILVEIRA',
             position: 'Hipster e CEO da Alura',
             image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-            displayArea: teams[0].name
+            displayArea: teams[0].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'JULIANA AMOASEI',
             position: 'Desenvolvedora de software e instrutora',
             image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
-            displayArea: teams[1].name
+            displayArea: teams[1].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'DANIEL ARTINE',
             position: 'Engenheiro de Software na Stone Age',
             image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
-            displayArea: teams[1].name
+            displayArea: teams[1].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'GUILHERME LIMA',
             position: 'Desenvolvedor Python e JavaScript na Alura',
             image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-            displayArea: teams[1].name
+            displayArea: teams[1].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'PAULO SILVEIRA',
             position: 'Hipster e CEO da Alura',
             image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-            displayArea: teams[1].name
+            displayArea: teams[1].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'JULIANA AMOASEI',
             position: 'Desenvolvedora de software e instrutora',
             image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
-            displayArea: teams[2].name
+            displayArea: teams[2].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'DANIEL ARTINE',
             position: 'Engenheiro de Software na Stone Age',
             image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
-            displayArea: teams[2].name
+            displayArea: teams[2].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'GUILHERME LIMA',
             position: 'Desenvolvedor Python e JavaScript na Alura',
             image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-            displayArea: teams[2].name
+            displayArea: teams[2].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'PAULO SILVEIRA',
             position: 'Hipster e CEO da Alura',
             image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-            displayArea: teams[2].name
+            displayArea: teams[2].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'JULIANA AMOASEI',
             position: 'Desenvolvedora de software e instrutora',
             image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
-            displayArea: teams[3].name
+            displayArea: teams[3].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'DANIEL ARTINE',
             position: 'Engenheiro de Software na Stone Age',
             image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
-            displayArea: teams[3].name
+            displayArea: teams[3].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'GUILHERME LIMA',
             position: 'Desenvolvedor Python e JavaScript na Alura',
             image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-            displayArea: teams[3].name
+            displayArea: teams[3].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'PAULO SILVEIRA',
             position: 'Hipster e CEO da Alura',
             image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-            displayArea: teams[3].name
+            displayArea: teams[3].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'JULIANA AMOASEI',
             position: 'Desenvolvedora de software e instrutora',
             image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
-            displayArea: teams[4].name
+            displayArea: teams[4].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'DANIEL ARTINE',
             position: 'Engenheiro de Software na Stone Age',
             image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
-            displayArea: teams[4].name
+            displayArea: teams[4].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'GUILHERME LIMA',
             position: 'Desenvolvedor Python e JavaScript na Alura',
             image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-            displayArea: teams[4].name
+            displayArea: teams[4].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'PAULO SILVEIRA',
             position: 'Hipster e CEO da Alura',
             image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-            displayArea: teams[4].name
+            displayArea: teams[4].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'JULIANA AMOASEI',
             position: 'Desenvolvedora de software e instrutora',
             image: 'https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg',
-            displayArea: teams[5].name
+            displayArea: teams[5].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'DANIEL ARTINE',
             position: 'Engenheiro de Software na Stone Age',
             image: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
-            displayArea: teams[5].name
+            displayArea: teams[5].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'GUILHERME LIMA',
             position: 'Desenvolvedor Python e JavaScript na Alura',
             image: '	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg',
-            displayArea: teams[5].name
+            displayArea: teams[5].name,
+            favorite: false
         },
         {
             id: uuid(),
             name: 'PAULO SILVEIRA',
             position: 'Hipster e CEO da Alura',
             image: 'https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg',
-            displayArea: teams[5].name
+            displayArea: teams[5].name,
+            favorite: false
         },
     ]
 
@@ -235,6 +259,13 @@ function App() {
         setTeams([...teams, {...newTeam, id: uuid()}]);
     }
 
+    function resolveFavorite(id) {
+        setRegistered(registered.map( register => {
+            if (register.id === id) register.favorite = !register.favorite;
+            return register;
+        }));
+    }
+
     return (
         <div className="App">
             <Banner/>
@@ -246,6 +277,8 @@ function App() {
             {teams.map((team) => {
                 return (
                     <Team
+                        onFavorite={resolveFavorite}
+                        favorite={team.favorite}
                         key={team.name}
                         name={team.name}
                         id={team.id}
