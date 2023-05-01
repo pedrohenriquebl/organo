@@ -193,6 +193,10 @@ function App() {
 
     const[registered, setRegistered] = useState(firstLoadData)
 
+    function deleteCard () {
+        console.log('deletando');
+    }
+
     return (
         <div className="App">
             <Banner/>
@@ -202,11 +206,13 @@ function App() {
             />
             {teams.map((team) => {
                 return (
-                    <Team key={team.name}
+                    <Team
+                        key={team.name}
                         name={team.name}
                         backgroundColor={team.secondaryColor}
                         textColor={team.primaryColor}
                         persons={ registered.filter(personType => personType.displayArea === team.name) }
+                        onCardDelete={deleteCard}
                     />
                 )
             })}

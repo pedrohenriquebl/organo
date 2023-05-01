@@ -1,8 +1,9 @@
 import './Person.css'
 
-const Person = ({ name, position, image, backGroundColor }) => {
+const Person = ({ name, position, image, backGroundColor, onCardDelete }) => {
     return (
-        <div className="person">
+        <div className="person" onClick={onCardDelete}>
+            <div className="deletar">Deletar</div>
             <div className="header" style={{backgroundColor: backGroundColor}}>
                 <img src={image} alt={name} />
             </div>

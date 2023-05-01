@@ -1,7 +1,7 @@
 import './Team.css'
 import Person from "../Person";
 
-const Team = ({ name, backgroundColor, textColor, persons, onDelete }) => {
+const Team = ({ name, backgroundColor, textColor, persons, onCardDelete }) => {
     return (
         (persons.length > 0) && <section className="team" style={{ backgroundColor: backgroundColor }}>
             <h3 style={{borderColor: textColor}}>{name}</h3>
@@ -13,7 +13,7 @@ const Team = ({ name, backgroundColor, textColor, persons, onDelete }) => {
                             name={person.name}
                             image={person.image}
                             position={person.position}
-                            onDelete={onDelete}
+                            onCardDelete={onCardDelete}
                         />
                     )
                 })}
