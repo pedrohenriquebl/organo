@@ -217,8 +217,8 @@ function App() {
 
     const[registered, setRegistered] = useState(firstLoadData)
 
-    function deleteCard () {
-        console.log('deletando');
+    function deleteCard (id) {
+        setRegistered(registered.filter(registered => registered.id !== id))
     }
 
     function changeTeamColor(color, id) {
