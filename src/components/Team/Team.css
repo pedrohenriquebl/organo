@@ -1,6 +1,7 @@
 .team {
     text-align: center;
     padding: 32px;
+    position: relative;
 }
 
 .team .team-list {
@@ -15,4 +16,11 @@
     border-bottom: 4px solid;
     display: inline-block;
     padding-bottom: 8px;
+}
+
+.input-colors {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
 }

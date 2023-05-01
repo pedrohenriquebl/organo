@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function App() {
 
-    const teams = [
+    const [teams, setTeams] = useState([
         {
             name: 'Orientador',
             primaryColor: '#57c278',
@@ -42,7 +42,7 @@ function App() {
             primaryColor: '#ff8a29',
             secondaryColor: '#ffeedf'
         }
-    ]
+    ])
 
     const firstLoadData = [
         {
@@ -197,6 +197,16 @@ function App() {
         console.log('deletando');
     }
 
+    function changeTeamColor(color, teamName) {
+        setTeams(teams.map( team =>{
+            if (team.name === teamName) {
+                team.primaryColor = color
+            }
+
+            return team;
+        }))
+    }
+
     return (
         <div className="App">
             <Banner/>
@@ -213,6 +223,7 @@ function App() {
                         textColor={team.primaryColor}
                         persons={ registered.filter(personType => personType.displayArea === team.name) }
                         onCardDelete={deleteCard}
+                        changeColor={changeTeamColor}
                     />
                 )
             })}
