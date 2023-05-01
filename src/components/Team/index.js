@@ -1,21 +1,22 @@
 import './Team.css'
 import Person from "../Person";
+import  hexToRgba  from "hex-to-rgba";
 
-const Team = ({ name, backgroundColor, textColor, persons, onCardDelete, changeColor }) => {
+const Team = ({ name, primaryColor, persons, onCardDelete, changeColor }) => {
     return (
-        (persons.length > 0) && <section className="team" style={{ backgroundColor: backgroundColor, backgroundImage: 'url(/imagens/fundo.png)' }}>
+        (persons.length > 0) && <section className="team" style={{ backgroundColor: hexToRgba(primaryColor, 0.3), backgroundImage: 'url(/imagens/fundo.png)' }}>
             <input
                 type="color"
                 className="input-colors"
-                value={textColor}
+                value={primaryColor}
                 onChange={event => changeColor(event.target.value, name)}
             />
-            <h3 style={{borderColor: textColor}}>{name}</h3>
+            <h3 style={{borderColor: primaryColor}}>{name}</h3>
             <div className="team-list">
                 {persons.map((person) => {
                     return (
                         <Person key={person.name}
-                            backGroundColor={textColor}
+                            backgroundColor={primaryColor}
                             name={person.name}
                             image={person.image}
                             position={person.position}

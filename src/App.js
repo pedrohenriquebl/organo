@@ -9,38 +9,31 @@ function App() {
     const [teams, setTeams] = useState([
         {
             name: 'Orientador',
-            primaryColor: '#57c278',
-            secondaryColor: '#d9f7e9'
+            color: '#57c278'
         },
         {
             name: 'Front-end',
-            primaryColor: '#82cffa',
-            secondaryColor: '#e8f8ff'
+            color: '#82cffa'
         },
         {
             name: 'Back-end',
-            primaryColor: '#a6d157',
-            secondaryColor: '#f0f8e2'
+            color: '#a6d157'
         },
         {
             name: 'Gestão Ambiental',
-            primaryColor: '#e06b69',
-            secondaryColor: '#fde7e8'
+            color: '#e06b69'
         },
         {
             name: 'Colaboradores',
-            primaryColor: '#db6ebf',
-            secondaryColor: '#fae9f5'
+            color: '#db6ebf'
         },
         {
             name: 'Patrocinadores',
-            primaryColor: '#ffba05',
-            secondaryColor: '#fff5d9'
+            color: '#ffba05'
         },
         {
             name: 'Inovação e Gestão',
-            primaryColor: '#ff8a29',
-            secondaryColor: '#ffeedf'
+            color: '#ff8a29'
         }
     ])
 
@@ -200,7 +193,7 @@ function App() {
     function changeTeamColor(color, teamName) {
         setTeams(teams.map( team =>{
             if (team.name === teamName) {
-                team.primaryColor = color
+                team.color = color
             }
 
             return team;
@@ -219,8 +212,7 @@ function App() {
                     <Team
                         key={team.name}
                         name={team.name}
-                        backgroundColor={team.secondaryColor}
-                        textColor={team.primaryColor}
+                        primaryColor={team.color}
                         persons={ registered.filter(personType => personType.displayArea === team.name) }
                         onCardDelete={deleteCard}
                         changeColor={changeTeamColor}
