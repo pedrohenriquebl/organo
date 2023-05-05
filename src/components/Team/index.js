@@ -4,8 +4,7 @@ import  hexToRgba  from "hex-to-rgba";
 
 const Team = ({ name, primaryColor, persons, onCardDelete, changeColor, onFavorite }) => {
     return (
-        (persons.length > 0) && <section className="team" style={{ backgroundColor: hexToRgba(primaryColor, 0.6), backgroundImage: 'url(/imagens/fundo.png)' }}>
-
+        (persons.length > 0) && <section className="team" style={{  backgroundImage: 'url(/imagens/fundo.png)' }}>
             <input
                 type="color"
                 className="input-colors"

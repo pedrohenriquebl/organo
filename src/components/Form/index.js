@@ -4,7 +4,7 @@ import SelectOptions from "../SelectOptions";
 import Button from "../Button";
 import {useState} from "react";
 
-const Form = ({ onFormSubmitted, teamList, registerTeam }) => {
+const Form = ({ onFormSubmitted, teamList, registerTeam, formStyle }) => {
 
     const [name, setName] = useState('')
     const [position, setPosition] = useState('')
@@ -30,7 +30,7 @@ const Form = ({ onFormSubmitted, teamList, registerTeam }) => {
 
     return (
         <section className="form">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} style={formStyle}>
                 <h2>Adicione os Integrantes</h2>
                 <FieldInput
                     isRequired={true}
@@ -64,7 +64,8 @@ const Form = ({ onFormSubmitted, teamList, registerTeam }) => {
                     Criar Card
                 </Button>
             </form>
-            <form onSubmit={(e) => {
+            <form style={formStyle}
+                onSubmit={(e) => {
                 e.preventDefault();
                 registerTeam({ name: teamName, color: teamColor});
 
